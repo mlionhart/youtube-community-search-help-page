@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — YouTube Community Search</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 18px;
+        line-height: 1.55;
+        color: #1a1a1a;
+        background: #fafafa;
+      }
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+      }
+      h1,
+      h2 {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        line-height: 1.25;
+      }
+      h1 {
+        font-size: 1.75rem;
+        margin: 0 0 1rem;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 1.75rem 0 0.6rem;
+      }
+      p,
+      ul {
+        margin: 0 0 1rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      a {
+        color: #0b57d0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy — YouTube Community Search</h1>
+      <p>Last updated: August 2, 2026</p>
+
+      <h2>What the extension stores</h2>
+      <p>
+        Imported community post data (text, metrics, and related fields from
+        YouTube Studio Analytics or a Studio zip) is stored
+        <strong>locally in your browser</strong> using Chrome extension storage.
+        Your Channel ID, if saved, is also stored locally so the extension can
+        open the correct Studio Analytics page.
+      </p>
+      <p>
+        This data is not uploaded to the developer’s servers for normal use.
+      </p>
+
+      <h2>Reliability diagnostics (Formspree)</h2>
+      <p>
+        On rare sync failures or unexpected Studio Analytics response shapes,
+        the extension may send a small <strong>anonymous</strong> reliability
+        report to Formspree so the developer can fix compatibility issues
+        quickly.
+      </p>
+      <p>That report may include:</p>
+      <ul>
+        <li>Error codes and a short technical message</li>
+        <li>Extension version</li>
+        <li>
+          Coarse counts such as how many posts or metric rows were parsed
+        </li>
+      </ul>
+      <p>It does <strong>not</strong> include:</p>
+      <ul>
+        <li>Post text or images</li>
+        <li>Your Channel ID</li>
+        <li>Cookies, passwords, or Google account credentials</li>
+        <li>Your email address</li>
+      </ul>
+      <p>
+        Reports are rate-limited (at most once per error type per day on a given
+        install).
+      </p>
+
+      <h2>Basic usage analytics</h2>
+      <p>
+        The extension may send anonymous product usage events (for example:
+        extension opened, sync started, sync finished, upgrade button clicked)
+        using Google Analytics Measurement Protocol. Events include only
+        technical fields such as event name, extension version, and an anonymous
+        install id. They do <strong>not</strong> include post text, Channel IDs,
+        cookies, tokens, or email addresses.
+      </p>
+
+      <h2>Permissions (why they exist)</h2>
+      <ul>
+        <li>
+          <strong>storage / unlimitedStorage</strong> — save your post library
+          locally
+        </li>
+        <li>
+          <strong>tabs</strong> — open/focus Studio Analytics and the status
+          window during import
+        </li>
+        <li>
+          <strong>notifications</strong> — optional desktop notices for import
+          progress
+        </li>
+        <li>
+          <strong>Host: studio.youtube.com</strong> — run import helpers on
+          YouTube Studio Analytics
+        </li>
+        <li>
+          <strong>Host: formspree.io</strong> — send the anonymous reliability
+          reports described above
+        </li>
+        <li>
+          <strong>Host: google-analytics.com</strong> — send anonymous usage
+          events only
+        </li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Questions or privacy requests:
+        <a href="mailto:mike@lionhartweb.com">mike@lionhartweb.com</a>
+      </p>
+    </main>
+  </body>
+</html>
