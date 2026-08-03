@@ -4,6 +4,7 @@ Repo root layout (do **not** flatten — the extension expects this path):
 
 ```
 index.html                          ← home (lionhartweb.com/)
+styles.css                          ← shared header/nav/footer styles
 youtube-community-search/
   index.html                        ← small link hub
   whats-new/index.html

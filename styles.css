@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+.site-header {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.site-header-inner {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+}
+
+.site-brand {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 650;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.site-brand:hover {
+  color: #0b57d0;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.15rem;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: #0b57d0;
+}
+
+.site-nav a[aria-current="page"] {
+  font-weight: 600;
+}
+
+main {
+  flex: 1;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 1.75rem 0 0.6rem;
+}
+
+p,
+ul {
+  margin: 0 0 1rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+a {
+  color: #0b57d0;
+}
+
+.site-footer {
+  border-top: 1px solid #2a2a2a;
+  background: #1a1a1a;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 0.85rem;
+  color: #b0b0b0;
+}
+
+.site-footer-inner {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.site-footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  justify-content: space-between;
+  color: #e8e8e8;
+}
+
+.site-footer a {
+  color: #c8c8c8;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.site-footer-legal {
+  margin: 0;
+  color: #888;
+}
