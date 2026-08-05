@@ -22,7 +22,7 @@
 
     <main>
       <h1>Privacy Policy — YouTube Community Search</h1>
-      <p>Last updated: August 2, 2026</p>
+      <p>Last updated: August 5, 2026</p>
 
       <h2>What the extension stores</h2>
       <p>
@@ -33,7 +33,32 @@
         open the correct Studio Analytics page.
       </p>
       <p>
-        This data is not uploaded to the developer’s servers for normal use.
+        If you start a trial or purchase Pro, the extension may also store
+        <strong>locally</strong> a license key and related entitlement timestamps
+        (for example trial start / plan status) so Pro features unlock on that
+        install. This data is not uploaded to the developer’s servers for normal
+        use.
+      </p>
+
+      <h2>Payments (Lemon Squeezy)</h2>
+      <p>
+        Pro checkout and billing are processed by
+        <strong>Lemon Squeezy</strong> (a third-party payment provider). When you
+        choose Upgrade / Start trial, the extension opens Lemon Squeezy’s
+        checkout in a normal browser tab. Payment card details are entered on
+        Lemon Squeezy’s site — not inside the extension — and are handled under
+        Lemon Squeezy’s own privacy policy.
+      </p>
+      <p>
+        After purchase, you paste a license key into the extension. To activate
+        or re-check that key, the extension may send
+        <strong>only the license key</strong> (and a short device label /
+        instance id) to Lemon Squeezy’s License API
+        (<code>api.lemonsqueezy.com</code>). It does
+        <strong>not</strong> send your community post text, images, Channel ID,
+        cookies, or Google credentials. A license key and local activation
+        timestamps may be stored in the extension so Pro stays unlocked on that
+        install.
       </p>
 
       <h2>Reliability diagnostics (Formspree)</h2>
@@ -77,15 +102,19 @@
       <ul>
         <li>
           <strong>storage / unlimitedStorage</strong> — save your post library
-          locally
+          and local Pro entitlement state
         </li>
         <li>
-          <strong>tabs</strong> — open/focus Studio Analytics and the status
-          window during import
+          <strong>tabs</strong> — open/focus Studio Analytics, checkout, and the
+          status window during import
         </li>
         <li>
           <strong>notifications</strong> — optional desktop notices for import
           progress
+        </li>
+        <li>
+          <strong>sidePanel</strong> — optional docked Side panel UI (you can
+          switch back to toolbar or detached window in Settings)
         </li>
         <li>
           <strong>Host: studio.youtube.com</strong> — run import helpers on
@@ -98,6 +127,10 @@
         <li>
           <strong>Host: google-analytics.com</strong> — send anonymous usage
           events only
+        </li>
+        <li>
+          <strong>Host: api.lemonsqueezy.com</strong> — activate / validate Pro
+          license keys (key + device label only)
         </li>
       </ul>
 
