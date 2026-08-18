@@ -6,6 +6,8 @@ Repo root layout (do **not** flatten — the extension expects this path):
 index.html                          ← home (lionhartweb.com/)
 styles.css                          ← shared header/nav/footer styles
 assets/lionhart-logo.png            ← circular header logo
+assets/screenshots/                 ← store graphics (search, sync, metrics, analytics, window modes)
+js/lightbox.js                      ← click/tap screenshots to full size
 youtube-community-search/
   index.html                        ← small link hub
   whats-new/index.html
