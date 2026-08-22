@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="chrome-a" x1="3.2" y1="15" x2="44.8" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d93025"/>
+      <stop offset="1" stop-color="#ea4335"/>
+    </linearGradient>
+    <linearGradient id="chrome-b" x1="20.7" y1="47.7" x2="41.5" y2="11.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcc934"/>
+      <stop offset="1" stop-color="#fbbc04"/>
+    </linearGradient>
+    <linearGradient id="chrome-c" x1="26.6" y1="46.5" x2="5.8" y2="10.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e8e3e"/>
+      <stop offset="1" stop-color="#34a853"/>
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="24" r="12" fill="#fff"/>
+  <path fill="url(#chrome-a)" d="M24 12h20.8A24 24 0 0 0 3.2 12l10.4 18A12 12 0 0 1 24 12z"/>
+  <circle cx="24" cy="24" r="9.5" fill="#1a73e8"/>
+  <path fill="url(#chrome-b)" d="m34.4 30-10.4 18A24 24 0 0 0 44.8 12H24a12 12 0 0 1 10.4 18z"/>
+  <path fill="url(#chrome-c)" d="m13.6 30-10.4-18A24 24 0 0 0 24 48l10.4-18a12 12 0 0 1-20.8 0z"/>
+</svg>
