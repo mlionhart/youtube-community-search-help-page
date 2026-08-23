@@ -13,10 +13,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pricing — YouTube Community Search</title>
+    <meta
+      name="description"
+      content="Free and Pro pricing for YouTube Community Search. Live Sync, local search, and analytics. Monthly $7.97, yearly $71.64. Current on Firefox and Edge."
+    />
     <link rel="icon" href="/assets/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.lionhartweb.com/#organization",
+          "name": "LionHart Web Services",
+          "legalName": "LionHart Web Services, Inc.",
+          "url": "https://www.lionhartweb.com/",
+          "email": "mike@lionhartweb.com",
+          "logo": "https://www.lionhartweb.com/assets/lionhart-logo.png",
+          "sameAs": [
+            "https://www.youtube.com/@LionhartM",
+            "https://www.instagram.com/mikelionhart/"
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.lionhartweb.com/#youtube-community-search",
+          "name": "YouTube Community Search",
+          "url": "https://www.lionhartweb.com/",
+          "applicationCategory": "BrowserApplication",
+          "operatingSystem": "Chrome, Firefox, Microsoft Edge",
+          "browserRequirements": "Mozilla Firefox, Microsoft Edge, or Google Chrome",
+          "description": "Browser extension for YouTube creators and channel managers. It imports YouTube Community posts from YouTube Studio Analytics (Live Sync), stores them locally in the browser, and lets you search, filter, and review performance. An optional Studio zip import is available as a backup for text and metrics. The latest upgrades version is live on Firefox and Edge; the Chrome upgrades release is delayed pending a Google support ticket.",
+          "author": {
+            "@id": "https://www.lionhartweb.com/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.lionhartweb.com/#organization"
+          },
+          "installUrl": "https://addons.mozilla.org/en-US/firefox/addon/youtube-community-search/",
+          "sameAs": [
+            "https://addons.mozilla.org/en-US/firefox/addon/youtube-community-search/",
+            "https://microsoftedge.microsoft.com/addons/detail/youtube-community-search/kdifkjjmaidleflhohbecjdlpanekncg",
+            "https://chromewebstore.google.com/detail/youtube-community-search/bakbkfnfpkaidfipoedofcbbaebgbooa"
+          ],
+          "featureList": [
+            "Live Sync / Get posts from YouTube Studio Analytics",
+            "Local search and filters across your post library",
+            "Post metrics including impressions, like rate, comment rate, vote rate, and engagement rate",
+            "Basic post and channel analytics on the Free plan",
+            "Advanced analytics, best time to post, Blueprints, CSV export, and up to 3 channels on Pro",
+            "Stores post data locally in the browser",
+            "Optional YouTube Studio zip import for text and metrics"
+          ],
+          "screenshot": [
+            "https://www.lionhartweb.com/assets/screenshots/search-and-filter.png",
+            "https://www.lionhartweb.com/assets/screenshots/sync.png",
+            "https://www.lionhartweb.com/assets/screenshots/metrics.png",
+            "https://www.lionhartweb.com/assets/screenshots/analytics.png",
+            "https://www.lionhartweb.com/assets/screenshots/window-modes.png"
+          ],
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Free",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Free extension with Live Sync, local search and filters, top posts by impressions (up to 500 shown), and basic analytics."
+            },
+            {
+              "@type": "Offer",
+              "name": "Pro Monthly",
+              "price": "7.97",
+              "priceCurrency": "USD",
+              "description": "Optional Pro subscription, $7.97 per month."
+            },
+            {
+              "@type": "Offer",
+              "name": "Pro Yearly",
+              "price": "71.64",
+              "priceCurrency": "USD",
+              "description": "Optional Pro subscription, $71.64 per year ($5.97/mo, billed yearly)."
+            },
+            {
+              "@type": "Offer",
+              "name": "Founding Member yearly",
+              "price": "50",
+              "priceCurrency": "USD",
+              "description": "Limited-time founding offer of $50 per year, shown in the extension after you first open Upgrade, when available."
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.lionhartweb.com/#website",
+          "url": "https://www.lionhartweb.com/",
+          "name": "YouTube Community Search",
+          "publisher": {
+            "@id": "https://www.lionhartweb.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.lionhartweb.com/youtube-community-search/pricing/#webpage",
+          "url": "https://www.lionhartweb.com/youtube-community-search/pricing/",
+          "name": "Pricing — YouTube Community Search",
+          "isPartOf": {
+            "@id": "https://www.lionhartweb.com/#website"
+          },
+          "about": {
+            "@id": "https://www.lionhartweb.com/#youtube-community-search"
+          },
+          "publisher": {
+            "@id": "https://www.lionhartweb.com/#organization"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -34,8 +150,11 @@
             <span class="site-brand-product">YouTube Community Search</span>
           </span>
         </a>
+        <div class="site-header-cluster">
+        <div class="site-header-menus" id="site-header-menus">
         <nav class="site-nav" aria-label="Main">
           <a href="/youtube-community-search/whats-new/">What’s new</a>
+          <a href="/youtube-community-search/guides/">Guides</a>
           <a href="/youtube-community-search/pricing/" aria-current="page"
             >Pricing</a
           >
@@ -43,7 +162,38 @@
           <a href="/youtube-community-search/terms/">Terms</a>
           <a href="/youtube-community-search/support/">Support</a>
         </nav>
-        <nav class="site-social" aria-label="Stores and social">
+        <nav class="site-follow" aria-label="Social">
+          <a
+            class="site-social-link"
+            href="https://www.youtube.com/@LionhartM"
+            rel="noopener noreferrer"
+            title="YouTube @LionhartM"
+            aria-label="YouTube @LionhartM"
+          >
+            <img class="site-social-icon site-social-icon-youtube" src="/assets/icons/youtube-color.svg" alt="" width="28" height="28" />
+          </a>
+          <a
+            class="site-social-link"
+            href="https://www.instagram.com/mikelionhart/"
+            rel="noopener noreferrer"
+            title="Instagram @mikelionhart"
+            aria-label="Instagram @mikelionhart"
+          >
+            <img class="site-social-icon site-social-icon-instagram" src="/assets/icons/instagram-color.svg" alt="" width="28" height="28" />
+          </a>
+        </nav>
+        </div>
+        <div class="site-ext">
+          <button
+            class="site-ext-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-ext-menu"
+            aria-haspopup="true"
+          >
+            Get Extension
+          </button>
+          <nav class="site-social" id="site-ext-menu" aria-label="Stores and social">
           <a
             class="site-social-link"
             href="https://addons.mozilla.org/en-US/firefox/addon/youtube-community-search/"
@@ -72,7 +222,7 @@
             <img class="site-social-icon site-social-icon-edge" src="/assets/icons/edge-color.svg" alt="" width="28" height="28" />
           </a>
           <a
-            class="site-social-link"
+            class="site-social-link site-social-follow"
             href="https://www.youtube.com/@LionhartM"
             rel="noopener noreferrer"
             title="YouTube @LionhartM"
@@ -81,7 +231,7 @@
             <img class="site-social-icon site-social-icon-youtube" src="/assets/icons/youtube-color.svg" alt="" width="28" height="28" />
           </a>
           <a
-            class="site-social-link"
+            class="site-social-link site-social-follow"
             href="https://www.instagram.com/mikelionhart/"
             rel="noopener noreferrer"
             title="Instagram @mikelionhart"
@@ -90,6 +240,17 @@
             <img class="site-social-icon site-social-icon-instagram" src="/assets/icons/instagram-color.svg" alt="" width="28" height="28" />
           </a>
         </nav>
+        </div>
+        </div>
+        <button
+          class="site-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-header-menus"
+          aria-label="Open menu"
+        >
+          <span class="site-nav-toggle-bars" aria-hidden="true"></span>
+        </button>
       </div>
     </header>
 
@@ -234,12 +395,15 @@
               alt=""
             />
             <span class="site-footer-brand-text">
-              <span>LionHart Web Services</span>
+              <span class="site-footer-business">
+                <span class="site-footer-business-lead">LionHart</span>
+                <span class="site-footer-business-rest">Web Services</span>
+              </span>
               <span class="site-footer-product">YouTube Community Search</span>
             </span>
           </a>
           <div class="site-footer-aside">
-            <a href="mailto:mike@lionhartweb.com">mike@lionhartweb.com</a>
+            <a class="site-footer-email" href="mailto:mike@lionhartweb.com">mike@lionhartweb.com</a>
             <nav class="site-social" aria-label="Stores and social">
               <a
                 class="site-social-link"
@@ -294,5 +458,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/nav.js"></script>
   </body>
 </html>

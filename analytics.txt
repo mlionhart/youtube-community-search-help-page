@@ -1,0 +1,45 @@
+What’s already in there (on purpose)
+
+H1 / title / URL all use the same query: how to find old YouTube community posts
+That phrase shows up once more in the body, as a sentence, not stuffing
+Nearby phrases people actually type: YouTube community posts search, community post history, Posts / Community tab, Ctrl+F, old polls
+Product name, Live Sync, Studio Analytics, Free vs Pro — so Google can tell this is a real tool page, not a thin blog
+Article schema (headline, dates, image, description), plus Organization / SoftwareApplication
+Descriptive screenshot alts
+Sitemap already lists home, product hub, What’s new, pricing, legal, support, Guides, and the article
+robots.txt already points at https://www.lionhartweb.com/sitemap.xml
+One small gap when you next edit: the article has JSON-LD description but no <meta name="description">. Nice to have, not urgent.
+
+Is it “optimized enough”?
+For one honest how-to: yes. More articles on real questions will do more than another pass on this one. Skip density quotas and skip a farm of {niche} landers.
+
+After you deploy (same Search Console property — don’t relink)
+Do not add Chrome / Edge / Firefox store URLs as new GSC properties. Those aren’t your domain.
+
+Open the live site and confirm https://www.lionhartweb.com/robots.txt shows the sitemap line, and https://www.lionhartweb.com/sitemap.xml lists the new URLs.
+In Search Console → Sitemaps → submit https://www.lionhartweb.com/sitemap.xml (or sitemap.xml if the property is already on www). If that sitemap is already submitted, hit it again after deploy so Google refetches.
+URL Inspection → Request indexing on:
+/
+/youtube-community-search/
+/youtube-community-search/guides/
+/youtube-community-search/how-to-find-old-youtube-community-posts/
+/youtube-community-search/pricing/
+/youtube-community-search/whats-new/
+Old 404s from the previous site: ignore unless you still care about those URLs — then add redirects. Don’t build a new property to “fix” them.
+Indexing can take days. Requesting twice doesn’t speed it up.
+
+SEO (classic)
+Deploy, then wait. New content needs crawl + a few real visits.
+Next articles: one question per URL, same honesty rules (Chrome delay, Free 500 display cap, local storage).
+Internal links: you already link Guides ↔ article ↔ pricing ↔ What’s new. When you write article 2, link related pieces both ways.
+Store listings: keep the public name aligned with the site. Don’t change the extension manifest name just for SEO.
+Optional later: <meta name="description"> and a self rel="canonical" on each page.
+GEO (AI overviews / ChatGPT / Perplexity, etc.)
+Same site, different habit: models quote pages that answer clearly and look like a real entity.
+
+Short factual sentences (you just did this) help more than adjective-heavy SEO copy.
+Keep who / what / limits easy to lift: LionHart Web Services, local-only posts, no Google password, Firefox/Edge current, Chrome delayed, Free top 500 on screen.
+Schema + same Organization sameAs (YouTube, Instagram) already helps entity matching.
+A short FAQ on a future article (“Can I search the Community tab in YouTube?” → one blunt paragraph) is useful for both snippets and models.
+Don’t chase “GEO tools” or hidden prompt blocks. Publish real answers; other sites linking you still matters more than a GEO plugin.
+Nothing else is required in Search Console besides sitemap + inspect the new URLs after the files are actually live on www.
