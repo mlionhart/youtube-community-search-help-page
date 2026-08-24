@@ -69,3 +69,23 @@
     extMq.addListener(onExt);
   }
 })();
+
+(() => {
+  document.querySelectorAll("a[href]").forEach((a) => {
+    const href = a.getAttribute("href");
+    if (!href || href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("#")) {
+      return;
+    }
+    try {
+      const url = new URL(href, location.href);
+      if (url.origin === location.origin) return;
+      a.target = "_blank";
+      const rel = new Set((a.getAttribute("rel") || "").split(/\s+/).filter(Boolean));
+      rel.add("noopener");
+      rel.add("noreferrer");
+      a.setAttribute("rel", [...rel].join(" "));
+    } catch (_) {
+      /* ignore invalid hrefs */
+    }
+  });
+})();

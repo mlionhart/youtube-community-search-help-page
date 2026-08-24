@@ -198,6 +198,11 @@ body {
   font-size: 0.95rem;
 }
 
+/* What’s new is the first link and stays green: align the button box, not the word. */
+.page-whats-new .site-nav {
+  padding-left: var(--page-pad);
+}
+
 .site-nav a {
   display: flex;
   align-items: center;
@@ -398,6 +403,112 @@ body {
 .store-cta-link .site-social-icon {
   width: 20px;
   height: 20px;
+}
+
+.support-form {
+  position: relative;
+  margin: 0.35rem 0 1.75rem;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.support-form .field {
+  margin: 0 0 1.1rem;
+}
+
+.support-form label {
+  display: block;
+  margin: 0 0 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.support-form input[type="text"],
+.support-form input[type="email"],
+.support-form select,
+.support-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.support-form textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.support-form input:focus-visible,
+.support-form select:focus-visible,
+.support-form textarea:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.support-honey {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.support-form-submit {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.25rem 0 0;
+  padding: 0.6rem 1.15rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--cta-orange);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.support-form-submit:hover,
+.support-form-submit:focus-visible {
+  background: var(--cta-orange-hot);
+}
+
+.support-form-success,
+.support-form-error {
+  display: none;
+}
+
+.support-form-success[data-fs-active],
+.support-form-error[data-fs-active] {
+  display: block;
+}
+
+.support-form-success {
+  margin: 0 0 1.15rem;
+  padding: 0.75rem 0.9rem;
+  border-left: 3px solid #14804a;
+  background: #edf8f1;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 0.95rem;
+}
+
+.support-form-error {
+  margin: 0 0 1.15rem;
+  padding: 0.75rem 0.9rem;
+  border-left: 3px solid var(--lion-red);
+  background: #fff4f4;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 0.95rem;
+}
+
+.support-form-submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
 }
 
 main {
@@ -877,6 +988,10 @@ a {
     padding-left: 0;
   }
 
+  .page-whats-new .site-nav {
+    padding-left: 0;
+  }
+
   .site-nav a {
     padding: 0 0.45rem;
   }
@@ -988,6 +1103,10 @@ a {
     width: 100%;
     min-height: 0;
     font-size: 0.95rem;
+    padding-left: 0;
+  }
+
+  .page-whats-new .site-nav {
     padding-left: 0;
   }
 

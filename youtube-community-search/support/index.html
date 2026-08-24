@@ -15,7 +15,7 @@
     <title>Support — YouTube Community Search</title>
     <meta
       name="description"
-      content="Get help with YouTube Community Search. Email mike@lionhartweb.com for install, sync, or billing questions."
+      content="Send a support request for YouTube Community Search. Install, sync, and billing questions."
     />
     <link rel="icon" href="/assets/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32" />
@@ -256,45 +256,142 @@
 
     <main>
       <h1>YouTube Community Search — Support</h1>
-      <p>
-        We are here to help. For questions or support, contact the email below
-        and we will respond promptly:
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:mike@lionhartweb.com">mike@lionhartweb.com</a>
-      </p>
+      <p>Send a message with the form below. We’ll reply to the email you enter.</p>
+      <p>Don’t include your Google password or full Studio cookies.</p>
 
-      <p>Please include:</p>
-      <ul>
-        <li>
-          What you were trying to do (Get posts, Get latest, zip, checkout,
-          license key, etc.)
-        </li>
-        <li>Approximately when it happened</li>
-        <li>
-          Extension version (Firefox, Edge, or Chrome → Extensions → YouTube
-          Community Search)
-        </li>
-        <li>Whether you’re on Free or Pro</li>
-      </ul>
+      <div class="support-form-success" id="support-sent" data-fs-success tabindex="-1">
+        Thanks — your message was sent. We’ll get back to you at the email you used.
+      </div>
+      <div class="support-form-error" id="support-error" data-fs-error>
+        Couldn’t send the form. Email
+        <a href="mailto:mike@lionhartweb.com">mike@lionhartweb.com</a>
+        instead.
+      </div>
+
+      <form
+        class="support-form"
+        id="support-form"
+        action="https://formspree.io/f/xyegqkar"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="YouTube Community Search support" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://www.lionhartweb.com/youtube-community-search/support/?sent=1"
+        />
+        <input
+          class="support-honey"
+          type="text"
+          name="_gotcha"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+        />
+
+        <div class="field">
+          <label for="support-name">Name</label>
+          <input
+            id="support-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            data-fs-field
+          />
+        </div>
+        <div class="field">
+          <label for="support-email">Email</label>
+          <input
+            id="support-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            data-fs-field
+          />
+        </div>
+        <div class="field">
+          <label for="support-browser">Browser</label>
+          <select id="support-browser" name="browser" required data-fs-field>
+            <option value="">Select…</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Edge">Microsoft Edge</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="support-plan">Plan</label>
+          <select id="support-plan" name="plan" required data-fs-field>
+            <option value="">Select…</option>
+            <option value="Free">Free</option>
+            <option value="Pro">Pro</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="support-version">Extension version (optional)</label>
+          <input
+            id="support-version"
+            name="extension_version"
+            type="text"
+            autocomplete="off"
+            placeholder="Extensions → YouTube Community Search"
+            data-fs-field
+          />
+        </div>
+        <div class="field">
+          <label for="support-task">What were you trying to do?</label>
+          <select id="support-task" name="what_you_were_doing" required data-fs-field>
+            <option value="">Select…</option>
+            <option value="Get posts / Live Sync">Get posts / Live Sync</option>
+            <option value="Get latest posts">Get latest posts</option>
+            <option value="Search or filters">Search or filters</option>
+            <option value="Zip import">Zip import</option>
+            <option value="Checkout / license key">Checkout / license key</option>
+            <option value="Something else">Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="support-when">About when did it happen? (optional)</label>
+          <input id="support-when" name="when" type="text" autocomplete="off" data-fs-field />
+        </div>
+        <div class="field">
+          <label for="support-message">What happened?</label>
+          <textarea id="support-message" name="message" required data-fs-field></textarea>
+        </div>
+        <button class="support-form-submit" type="submit" data-fs-submit-btn>Send message</button>
+      </form>
+
+      <p>
+        You can also email
+        <a href="mailto:mike@lionhartweb.com">mike@lionhartweb.com</a>
+        if the form doesn’t work.
+      </p>
 
       <h2>Pro / payments</h2>
       <p>
-        Checkout runs on <strong>Lemon Squeezy</strong> in a browser tab. After
-        purchase or trial signup, paste the license key into the extension’s
-        Upgrade page (License key). Do not email card numbers; contact Lemon
-        Squeezy for billing receipt questions when needed.
+        Checkout runs on <strong>Lemon Squeezy</strong> in a browser tab.
+      </p>
+      <p>
+        After purchase or trial signup, paste the license key into the
+        extension’s Upgrade page (License key).
+      </p>
+      <p>
+        Do not email card numbers. Contact Lemon Squeezy for billing receipt
+        questions when needed.
       </p>
 
       <h2>After updating from an older zip-only version</h2>
       <p>
         Use <strong>Sync → Get latest posts</strong> once so Live Sync can add
-        poll options, images, quizzes, and accurate comments vs votes. Your
-        existing library stays saved; nothing is wiped to enforce Free limits.
+        poll options, images, quizzes, and accurate comments vs votes.
       </p>
-
-      <p>Do not send your Google password or full Studio cookies.</p>
+      <p>
+        Your existing library stays saved. Nothing is wiped to enforce Free
+        limits.
+      </p>
     </main>
 
     <footer class="site-footer">
@@ -373,5 +470,32 @@
       </div>
     </footer>
     <script src="/js/nav.js"></script>
+    <script>
+      window.formspree =
+        window.formspree ||
+        function () {
+          (formspree.q = formspree.q || []).push(arguments);
+        };
+      formspree("initForm", {
+        formElement: "#support-form",
+        formId: "xyegqkar",
+        useDefaultStyles: false,
+        onSuccess: function () {
+          var note = document.getElementById("support-sent");
+          if (note) {
+            note.focus();
+            note.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          }
+        },
+      });
+      if (new URLSearchParams(location.search).get("sent") === "1") {
+        var sent = document.getElementById("support-sent");
+        if (sent) {
+          sent.setAttribute("data-fs-active", "");
+          sent.focus();
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
   </body>
 </html>
