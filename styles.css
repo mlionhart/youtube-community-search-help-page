@@ -15,6 +15,7 @@
   --nav-link-pad-x: 0.85rem;
   --cta-orange: #e85d04;
   --cta-orange-hot: #ff6a12;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 * {
@@ -26,9 +27,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font);
   font-size: 18px;
-  line-height: 1.55;
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--ink);
   background: var(--paper);
 }
@@ -58,7 +60,7 @@ body {
   justify-self: start;
   gap: 0.6rem;
   padding: 0.5rem 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   text-decoration: none;
   color: var(--header-ink);
   flex-shrink: 0;
@@ -194,7 +196,7 @@ body {
   min-width: 0;
   /* Match article text: page inset minus the first link’s own side pad. */
   padding-left: calc(var(--page-pad) - var(--nav-link-pad-x));
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 0.95rem;
 }
 
@@ -246,7 +248,7 @@ body {
   border-radius: 6px;
   background: var(--cta-orange);
   color: #fff;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 0.82rem;
   font-weight: 700;
   line-height: 1.2;
@@ -293,7 +295,8 @@ body {
 }
 
 .site-header .site-social-icon,
-.store-cta-link .site-social-icon {
+.store-cta-link .site-social-icon,
+.site-footer img.site-social-icon {
   display: block;
   object-fit: contain;
   background: none;
@@ -304,6 +307,11 @@ body {
 .site-header .site-social-icon {
   width: 26px;
   height: 26px;
+}
+
+.site-footer img.site-social-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .store-cta-link .site-social-icon {
@@ -361,9 +369,14 @@ body {
   padding: 0.75rem 0.9rem;
   border-left: 3px solid var(--lion-red);
   background: #fff4f4;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 0.95rem;
   line-height: 1.45;
+}
+
+.store-notice-ok {
+  border-left-color: #14804a;
+  background: #edf8f1;
 }
 
 .store-notice strong {
@@ -377,7 +390,7 @@ body {
   flex-wrap: wrap;
   gap: 0.65rem;
   margin: 0 0 1.5rem;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
 }
 
 .store-cta-link {
@@ -408,7 +421,7 @@ body {
 .support-form {
   position: relative;
   margin: 0.35rem 0 1.75rem;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
 }
 
 .support-form .field {
@@ -493,7 +506,7 @@ body {
   padding: 0.75rem 0.9rem;
   border-left: 3px solid #14804a;
   background: #edf8f1;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 0.95rem;
 }
 
@@ -502,7 +515,7 @@ body {
   padding: 0.75rem 0.9rem;
   border-left: 3px solid var(--lion-red);
   background: #fff4f4;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 0.95rem;
 }
 
@@ -521,7 +534,7 @@ main {
 
 h1,
 h2 {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   line-height: 1.25;
 }
 
@@ -536,7 +549,7 @@ h2 {
 }
 
 h3 {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 1.15rem;
   line-height: 1.25;
   margin: 1.75rem 0 0.6rem;
@@ -579,7 +592,7 @@ li {
 article ol li::marker,
 .guide-page ol li::marker {
   font-weight: 700;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
 }
 
 article ol li .article-shot,
@@ -637,7 +650,7 @@ a {
 }
 
 .guide-list a {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-weight: 600;
 }
 
@@ -655,7 +668,7 @@ a {
 
 .article-kicker {
   margin: 0 0 0.4rem;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 0.78rem;
   font-weight: 650;
   letter-spacing: 0.06em;
@@ -676,7 +689,7 @@ a {
 .guide-sidebar {
   padding-top: 0.25rem;
   border-top: 1px solid #ddd;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
 }
 
 .guide-sidebar h2 {
@@ -802,7 +815,7 @@ a {
 
 .shot figcaption {
   margin: 0.45rem 0 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 0.85rem;
   color: #555;
 }
@@ -843,7 +856,7 @@ a {
 .site-footer {
   border-top: 1px solid #2a2a2a;
   background: #1a1a1a;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: var(--font);
   font-size: 0.85rem;
   color: #b0b0b0;
 }

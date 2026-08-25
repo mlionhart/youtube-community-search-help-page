@@ -30,7 +30,7 @@ Indexing can take days. Requesting twice doesn’t speed it up.
 
 SEO (classic)
 Deploy, then wait. New content needs crawl + a few real visits.
-Next articles: one question per URL, same honesty rules (Chrome delay, Free 500 display cap, local storage).
+Next articles: one question per URL, same honesty rules (Free 500 display cap, local storage).
 Internal links: you already link Guides ↔ article ↔ pricing ↔ What’s new. When you write article 2, link related pieces both ways.
 Store listings: keep the public name aligned with the site. Don’t change the extension manifest name just for SEO.
 Optional later: <meta name="description"> and a self rel="canonical" on each page.
@@ -38,7 +38,7 @@ GEO (AI overviews / ChatGPT / Perplexity, etc.)
 Same site, different habit: models quote pages that answer clearly and look like a real entity.
 
 Short factual sentences (you just did this) help more than adjective-heavy SEO copy.
-Keep who / what / limits easy to lift: LionHart Web Services, local-only posts, no Google password, Firefox/Edge current, Chrome delayed, Free top 500 on screen.
+Keep who / what / limits easy to lift: LionHart Web Services, local-only posts, no Google password, Chrome/Firefox/Edge, Free top 500 on screen.
 Schema + same Organization sameAs (YouTube, Instagram) already helps entity matching.
 A short FAQ on a future article (“Can I search the Community tab in YouTube?” → one blunt paragraph) is useful for both snippets and models.
 Don’t chase “GEO tools” or hidden prompt blocks. Publish real answers; other sites linking you still matters more than a GEO plugin.
