@@ -15,6 +15,7 @@ youtube-community-search/
   privacy/index.html
   terms/index.html                  ← terms of service (Lemon)
   support/index.html
+  uninstalled/index.html            ← optional post-remove survey (setUninstallURL)
 ```
 
 Live URLs:
@@ -25,3 +26,4 @@ Live URLs:
 - https://www.lionhartweb.com/youtube-community-search/privacy/
 - https://www.lionhartweb.com/youtube-community-search/terms/
 - https://www.lionhartweb.com/youtube-community-search/support/
+- https://www.lionhartweb.com/youtube-community-search/uninstalled/

@@ -456,6 +456,33 @@ body {
   resize: vertical;
 }
 
+.support-form fieldset {
+  margin: 0 0 1.1rem;
+  padding: 0.75rem 0.9rem 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.support-form legend {
+  padding: 0 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.support-form .choice {
+  display: block;
+  margin: 0.4rem 0;
+  font-weight: 500;
+}
+
+.support-form .choice input {
+  margin-right: 0.45rem;
+}
+
+.support-form textarea.uninstall-note {
+  min-height: 5.5rem;
+}
+
 .support-form input:focus-visible,
 .support-form select:focus-visible,
 .support-form textarea:focus-visible {
