@@ -418,6 +418,37 @@ body {
   height: 20px;
 }
 
+.article-install {
+  margin: 0 0 1.5rem;
+  padding: 0.95rem 1rem 0.2rem;
+  border: 1px solid #d7eadf;
+  border-left: 3px solid #14804a;
+  border-radius: 10px;
+  background: #edf8f1;
+}
+
+.article-install-heading {
+  margin: 0 0 0.7rem;
+  font-family: var(--font);
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.article-install .store-cta {
+  margin-bottom: 0.7rem;
+}
+
+.article-demo,
+.article-skip {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+}
+
+#sync-and-search {
+  scroll-margin-top: 1.5rem;
+}
+
 .support-form {
   position: relative;
   margin: 0.35rem 0 1.75rem;
