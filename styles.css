@@ -724,6 +724,23 @@ a {
   gap: 2.25rem;
 }
 
+.guide-layout a {
+  text-decoration: none;
+}
+
+.confusion-note {
+  margin: 0 0 1.15rem;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--link);
+  background: #ecf8fc;
+  font-family: var(--font);
+  font-size: 0.95rem;
+}
+
+.confusion-note p:last-child {
+  margin-bottom: .2rem;
+}
+
 .article-kicker {
   margin: 0 0 0.4rem;
   font-family: var(--font);

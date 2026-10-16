@@ -1,6 +1,6 @@
 # ytcs-support-site (GitHub Pages)
 
-Repo root layout (do **not** flatten — the extension expects this path):
+Repo root layout (do **not** flatten - the extension expects this path):
 
 ```
 index.html                          ← home (lionhartweb.com/)
